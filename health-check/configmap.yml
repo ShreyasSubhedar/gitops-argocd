@@ -3,14 +3,6 @@ kind: ConfigMap
 metadata:
   name: moving-shapes-colors
 data:
-  resource.customizations.health.ConfigMap: |
-    hs = {}
-    hs.status = "Healthy"
-    if obj.data.TRIANGLE_COLOR == "white" then
-      hs.state = "Degraded"
-      hs.message = "Use a different color for traingle"
-    end
-    return hs
   CIRCLE_COLOR: "pink"
   OVAL_COLOR: "lightgreen"
   SQUARE_COLOR: "orange"
